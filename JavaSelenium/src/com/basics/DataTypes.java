@@ -41,7 +41,7 @@ public class DataTypes {
 		System.out.println("Boolean value of h is : " + h);
 		
 		
-	
+		// Narrowing and Widening casting
 
 	}
 
