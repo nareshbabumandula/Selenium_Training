@@ -12,7 +12,7 @@ public class DataTypes {
 		//double (Double), boolean (Boolean)
 		
 		// JIT Compiler
-		byte a=127;
+		byte a=123;
 		System.out.println("Byte value of a is : " + a);
 		System.out.println(Byte.MIN_VALUE);
 		System.out.println(Byte.MAX_VALUE);
@@ -68,6 +68,7 @@ public class DataTypes {
 		 */
 		
 		// Implicit or Widening or automatic type casting 
+		
 		
 		byte a1 = 108;
 		int b1 = a1; // Assigning lower data type variable to a higher data type variable
