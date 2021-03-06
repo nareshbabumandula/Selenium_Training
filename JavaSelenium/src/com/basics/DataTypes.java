@@ -19,7 +19,7 @@ public class DataTypes {
 		
 		short b=1314;
 		System.out.println("Short value of b is : " + b);
-		System.out.println(Short.MIN_VALUE);
+		System.out.println(Short.MIN_VALUE); // Short Wrapper class 
 		System.out.println(Short.MAX_VALUE);
 				
 		int c = 241445;
