@@ -7,13 +7,18 @@ public class IfTest {
 	int a=5;
 	int b=10;
 
+
+	public void enhancedIf() {
+		if (a<b) System.out.println("a is less than b");
+	}
+
 	// Method (Block of code) or Behavior or functionality
 	public void IfExample() {
 		if (a>b) {
 			System.out.println("a is greater than b");
 		}
 	}
-	
+
 	public void IfElseExample() {
 		if (a>b) {
 			System.out.println("a is greater than b");
@@ -31,7 +36,7 @@ public class IfTest {
 			System.out.println("a is less than b");
 		}
 	}
-	
+
 	// No argument explicit constructor
 	public IfTest() {
 		System.out.println("This is a constructor");
@@ -48,7 +53,8 @@ public class IfTest {
 		//it.IfExample();
 		//it.IfElseExample();
 		it.IfElseIfElseExample();
-		
+		it.enhancedIf();
+
 
 	}
 
