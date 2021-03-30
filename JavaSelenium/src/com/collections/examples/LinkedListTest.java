@@ -30,6 +30,7 @@ public class LinkedListTest {
 		llist.add("Bala");
 		llist.add("Nishanth");
 		ll.addAll(llist); // Add two LinkedList collections
+
 		
 		for (String string : ll) {
 			System.out.println("Element found is : " +string);
