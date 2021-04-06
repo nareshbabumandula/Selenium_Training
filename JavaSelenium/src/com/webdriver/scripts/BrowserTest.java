@@ -33,7 +33,7 @@ public class BrowserTest{
 	
 	@BeforeClass
 	public void launchBrowser() {
-		System.setProperty("webdriver.chrome.driver", "C:\\Users\\admin\\Documents\\GitHub\\Selenium_Training\\JavaSelenium\\browsers\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", ".\\browsers\\chromedriver.exe");
 		driver = new ChromeDriver();
 	}
 
