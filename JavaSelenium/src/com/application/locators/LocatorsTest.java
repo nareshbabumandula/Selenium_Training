@@ -6,6 +6,7 @@ import org.testng.annotations.Test;
 import org.testng.annotations.BeforeClass;
 import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -108,6 +109,10 @@ public class LocatorsTest{
 		Thread.sleep(2000);
 		driver.findElement(By.xpath("//input[@id='pass']/preceding::input")).clear();
 
+		// DOM with JavaScriptExecutor
+		JavascriptExecutor js = (JavascriptExecutor)driver;
+		js.executeScript("document.getElementById('user').value='Raghavan';");
+		js.executeScript("arguments[0].click();", driver.findElement(By.name("btnSubmit")));
 	}
 
 	@BeforeClass
