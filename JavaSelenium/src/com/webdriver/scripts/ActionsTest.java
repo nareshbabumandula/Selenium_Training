@@ -19,7 +19,7 @@ public class ActionsTest{
 	WebDriver driver;
 
 	@Test
-	public void buttonMethods() throws InterruptedException {
+	public void actionsMethods() throws InterruptedException {
 		
 		Actions menu = new Actions(driver);
 		WebElement addons = driver.findElement(By.linkText("ADD-ONS"));
