@@ -10,7 +10,9 @@ import java.util.Set;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.Dimension;
 import org.openqa.selenium.Keys;
+import org.openqa.selenium.Point;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Reporter;
@@ -65,6 +67,14 @@ public class BrowserTest{
 		
 		System.out.println(driver.getPageSource()); // Entire html code of the page will be printed
 		
+		
+		//Mimimize the browser
+		Point p = new Point(0,3000);     	
+		driver.manage().window().setPosition(p);
+		
+		// Resize the browser
+		Dimension d = new Dimension(300,1080);
+		driver.manage().window().setSize(d);
 
 	}
 	
